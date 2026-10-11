@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tết Pro Software App — Cổng khám phá ứng dụng</title>
+<meta name="description" content="Cổng khám phá ứng dụng của Tết Pro Software: danh mục ứng dụng, nền tảng hỗ trợ, hướng dẫn tải và cài đặt an toàn. Giải pháp chuyển đổi số toàn diện.">
+<link rel="canonical" href="https://www.tetprosoftware.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tết Pro Software App">
+<meta property="og:description" content="Giải pháp chuyển đổi số toàn diện. Khám phá ứng dụng, nền tảng và hướng dẫn cài đặt.">
+<meta property="og:url" content="https://www.tetprosoftware.app/">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#4F46E5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M9 10h14M16 10v13' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#F8FAFC;--bg2:#DBEAFE;--card:#fff;--ink:#0f172a;--mut:#475569;--ind:#4F46E5;--ind2:#3730a3;--mint:#BBF7D0;--mintd:#15803d;--line:#e2e8f0;--r:20px}
+:root[data-theme=dark]{--bg:#0b1020;--bg2:#1b2450;--card:#131a33;--ink:#e8ecf8;--mut:#a5b0cf;--ind:#818cf8;--ind2:#c7d2fe;--mint:#14532d;--mintd:#86efac;--line:#26305a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--ind)}a:hover{color:var(--ind2)}
+:focus-visible{outline:3px solid var(--ind);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem)}h2{font-size:clamp(1.7rem,3.5vw,2.4rem)}h3{font-size:1.15rem}
+p{margin:0 0 1em}.lead{color:var(--mut);font-size:1.12rem;max-width:56ch}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ind);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}.skip:focus{left:8px}
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);text-decoration:none}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--ind);display:grid;place-items:center;color:#fff;font-style:normal;font-weight:800}
+nav{margin-left:auto;display:flex;gap:4px}
+nav a{color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:10px;font-weight:600;font-size:.95rem}
+nav a:hover{background:var(--bg2)}
+.icon-btn{border:1px solid var(--line);background:var(--card);color:var(--ink);width:40px;height:40px;border-radius:12px;cursor:pointer;font-size:1.05rem}
+.menu{display:none}
+@media(max-width:860px){.menu{display:block;margin-left:auto}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;padding:12px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}}
+.btn{display:inline-block;padding:13px 22px;border-radius:14px;font-weight:700;text-decoration:none;border:2px solid var(--ind);cursor:pointer;font-size:1rem;font-family:inherit}
+.btn.p{background:var(--ind);color:#fff}.btn.p:hover{background:var(--ind2);color:#fff}
+.btn.s{background:transparent;color:var(--ind)}.btn.s:hover{background:var(--bg2)}
+.hero{background:linear-gradient(180deg,var(--bg2),var(--bg));padding:64px 0 80px}
+.hgrid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.hgrid{grid-template-columns:1fr}}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.tag{display:inline-block;background:var(--mint);color:var(--mintd);padding:4px 12px;border-radius:99px;font-size:.85rem;font-weight:700;margin-bottom:16px}
+/* device mockups (CSS only, abstract wireframes) */
+.devs{position:relative;height:340px;max-width:520px;margin:0 auto;width:100%}
+.dev{position:absolute;background:var(--card);border:3px solid var(--ink);box-shadow:0 18px 40px rgba(79,70,229,.2)}
+.dev .scr{position:absolute;inset:8px;border-radius:inherit;background:linear-gradient(135deg,var(--bg2),var(--card));overflow:hidden;padding:10px}
+.dev .scr b{display:block;height:8px;border-radius:4px;background:var(--ind);opacity:.75;margin-bottom:7px}
+.dev .scr b:nth-child(2){width:60%;background:var(--mintd);opacity:.5}.dev .scr b:nth-child(3){width:80%;opacity:.3}.dev .scr b:nth-child(4){width:40%;opacity:.3}
+.d1{left:0;top:30px;width:340px;height:210px;border-radius:14px}
+.d1:after{content:"";position:absolute;left:50%;bottom:-26px;width:90px;height:22px;transform:translateX(-50%);background:var(--ink);border-radius:0 0 12px 12px}
+.d2{right:10px;top:70px;width:170px;height:260px;border-radius:26px;animation:fl 6s ease-in-out infinite}
+.d3{left:50px;bottom:0;width:200px;height:140px;border-radius:16px;border-width:5px}
+@keyframes fl{50%{transform:translateY(-12px)}}
+@media(max-width:520px){.d1{width:240px;height:160px}.d2{width:120px;height:200px}.d3{width:150px;height:105px;left:20px}.devs{height:300px}}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.app{display:flex;flex-direction:column;gap:6px}
+.ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--ind),#7c83f3);margin-bottom:8px}
+.ico svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.st{align-self:flex-start;padding:3px 10px;border-radius:99px;font-size:.82rem;font-weight:700;background:var(--bg2);color:var(--ind2)}
+.st.ok{background:var(--mint);color:var(--mintd)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chip{border:1px solid var(--line);border-radius:8px;padding:2px 8px;font-size:.82rem;color:var(--mut)}
+dl.meta{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:6px 0;font-size:.9rem;color:var(--mut)}dl.meta dt{font-weight:700}dl.meta dd{margin:0}
+.dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:10px}
+.note{font-size:.88rem;color:var(--mut);background:var(--bg);border:1px dashed var(--line);border-radius:12px;padding:10px 12px;width:100%}
+.pf li,.steps li{margin-bottom:6px}.pf ul,.steps ul{padding-left:20px;margin:8px 0 0;color:var(--mut)}
+.alt{background:linear-gradient(180deg,var(--bg),var(--bg2) 160%)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.warn{border-left:5px solid var(--ind);background:var(--bg2);border-radius:12px;padding:14px 18px;margin-top:18px}
+.rel{display:flex;flex-direction:column;gap:14px}
+.rel article{display:grid;grid-template-columns:150px 1fr;gap:16px}
+@media(max-width:600px){.rel article{grid-template-columns:1fr}}
+.demo{color:#92400e;background:#fef3c7;padding:2px 10px;border-radius:99px;font-size:.8rem;font-weight:700}
+:root[data-theme=dark] .demo{background:#78350f;color:#fde68a}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details[open] summary{margin-bottom:8px}details p{color:var(--mut);margin:0}
+.eco a.card{display:block;text-decoration:none;color:var(--ink)}.eco a.card:hover{border-color:var(--ind)}
+.eco small{color:var(--ind);font-weight:700;word-break:break-all}
+.soc{display:flex;flex-wrap:wrap;gap:10px}.soc a{border:1px solid var(--line);background:var(--card);padding:8px 16px;border-radius:99px;text-decoration:none;font-weight:600}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font-size:.92rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua đến nội dung chính</a>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top" aria-label="Tết Pro Software — trang chủ"><i aria-hidden="true">T</i>Tết Pro Software</a>
+<button class="icon-btn menu" id="menu" aria-expanded="false" aria-controls="nav" aria-label="Mở menu">☰</button>
+<nav id="nav" aria-label="Điều hướng chính">
+<a href="#apps">Ứng dụng</a><a href="#platforms">Nền tảng</a><a href="#guide">Hướng dẫn</a><a href="#releases">Phiên bản</a><a href="#support">Hỗ trợ</a>
+</nav>
+<button class="icon-btn" id="theme" aria-label="Chuyển giao diện sáng/tối" aria-pressed="false">◐</button>
+</div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+<div class="wrap hgrid">
+<div>
+<span class="tag">Giải pháp chuyển đổi số toàn diện</span>
+<h1>Your next digital tool starts here.</h1>
+<p class="lead">Cổng ứng dụng của Tết Pro Software: nơi bạn xem danh mục ứng dụng, nền tảng hỗ trợ, bản phát hành và hướng dẫn tải về, cài đặt an toàn từ nguồn chính thức.</p>
+<div class="cta"><a class="btn p" href="#apps">Khám phá ứng dụng</a><a class="btn s" href="#guide">Hướng dẫn cài đặt</a></div>
+</div>
+<div class="devs" role="img" aria-label="Minh họa cách điệu máy tính, điện thoại và máy tính bảng">
+<div class="dev d1"><div class="scr"><b></b><b></b><b></b><b></b></div></div>
+<div class="dev d2"><div class="scr"><b></b><b></b><b></b><b></b></div></div>
+<div class="dev d3"><div class="scr"><b></b><b></b><b></b></div></div>
+</div>
+</div>
+</div>
+
+<section id="apps">
+<div class="wrap">
+<div class="sh"><div><h2>Ứng dụng nổi bật</h2><p class="lead" style="margin:0">Chỉ các bản phát hành đã được xác nhận mới có nút tải. Hiện chưa có ứng dụng nào được công bố, nên các thẻ dưới đây là định hướng đang phát triển.</p></div></div>
+<div class="grid" id="appGrid" aria-live="polite"></div>
+</div>
+</section>
+
+<section id="platforms" class="alt">
+<div class="wrap">
+<h2>Nền tảng hỗ trợ</h2>
+<div class="grid" id="platGrid"></div>
+</div>
+</section>
+
+<section id="guide">
+<div class="wrap">
+<h2>Hướng dẫn tải và cài đặt</h2>
+<p class="lead">Tải ứng dụng chỉ từ liên kết xuất hiện trên trang này hoặc từ kho chính thức. Mỗi kênh dưới đây chỉ có nút tải khi liên kết thật đã được cung cấp.</p>
+<div class="two steps">
+<div class="card"><h3>Google Play</h3><p>Nút xuất hiện khi có URL ứng dụng chính thức trên Google Play.</p><ul><li>Mở liên kết, kiểm tra tên nhà phát triển là Tết Pro Software.</li><li>Nhấn Cài đặt.</li></ul></div>
+<div class="card"><h3>Apple App Store</h3><p>Nút xuất hiện khi có URL thực trên App Store.</p><ul><li>Mở liên kết trên iPhone/iPad, kiểm tra nhà phát triển.</li><li>Nhấn Nhận và xác thực bằng Apple ID.</li></ul></div>
+<div class="card"><h3>Microsoft Store</h3><p>Nút xuất hiện khi có URL thực trên Microsoft Store.</p><ul><li>Mở liên kết bằng Microsoft Store trên Windows.</li><li>Nhấn Nhận/Cài đặt.</li></ul></div>
+<div class="card"><h3>APK tải trực tiếp (Android)</h3><p>Chỉ cung cấp khi có URL tải thật, số phiên bản và, nếu có, checksum SHA-256.</p><ul><li>Chỉ tải từ trang chính thức này hoặc GitHub của Tết Pro Software.</li><li>So sánh SHA-256 của tệp tải về với giá trị được công bố (<code>sha256sum</code> hoặc ứng dụng kiểm tra băm).</li><li>Cho phép cài từ nguồn không rõ cho đúng một ứng dụng trình duyệt/trình quản lý tệp bạn dùng, rồi tắt lại sau khi cài.</li></ul></div>
+<div class="card"><h3>EXE tải trực tiếp (Windows)</h3><p>Chỉ cung cấp khi có tệp thật, số phiên bản, thông tin nhà phát hành và chữ ký số (nếu có).</p><ul><li>Chuột phải tệp → Properties → Digital Signatures để xem chữ ký.</li><li>Kiểm tra tên nhà phát hành khớp thông tin công bố.</li><li>Nếu Windows SmartScreen hoặc phần mềm diệt virus cảnh báo, hãy dừng lại và liên hệ hỗ trợ trước khi tiếp tục.</li></ul></div>
+<div class="card"><h3>Chưa có liên kết</h3><p>Hiển thị “Chưa phát hành — đăng ký nhận thông tin qua email”.</p><ul><li>Trang này không lưu đăng ký. Bạn gửi email trực tiếp tới <a href="mailto:lien-he@tetprosoftware.com?subject=%C4%90%C4%83ng%20k%C3%BD%20nh%E1%BA%ADn%20th%C3%B4ng%20tin%20%E1%BB%A9ng%20d%E1%BB%A5ng">lien-he@tetprosoftware.com</a> để đề nghị nhận thông tin.</li></ul></div>
+</div>
+<div class="warn"><strong>Lưu ý an toàn:</strong> không tắt các cảnh báo bảo mật của hệ điều hành hay bỏ qua chúng khi chưa xác minh nguồn và tệp. Không cài tệp được gửi qua tin nhắn hoặc trang không rõ nguồn gốc.</div>
+</div>
+</section>
+
+<section id="releases" class="alt">
+<div class="wrap">
+<h2>Ghi chú phát hành</h2>
+<div class="rel" id="relList"></div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<h2>Câu hỏi thường gặp</h2>
+<details><summary>Làm sao tải ứng dụng?</summary><p>Dùng nút tải trong thẻ ứng dụng (khi có) hoặc kho ứng dụng chính thức. Xem phần Hướng dẫn cho từng nền tảng.</p></details>
+<details><summary>Cập nhật ứng dụng như thế nào?</summary><p>Bản cài từ cửa hàng được cập nhật qua cửa hàng. Bản APK/EXE cần tải phiên bản mới từ trang chính thức và kiểm tra lại checksum hoặc chữ ký số.</p></details>
+<details><summary>Yêu cầu hệ thống là gì?</summary><p>Mỗi ứng dụng sẽ công bố yêu cầu hệ thống riêng cùng bản phát hành. Hiện chưa có thông số nào được xác nhận.</p></details>
+<details><summary>Làm sao biết tệp tải về an toàn?</summary><p>Tải từ nguồn chính thức, so khớp SHA-256 với giá trị công bố, kiểm tra chữ ký số với EXE, và quét bằng phần mềm bảo mật. Nếu có cảnh báo, đừng cài và liên hệ hỗ trợ.</p></details>
+<details><summary>Báo lỗi ở đâu?</summary><p>Gửi email tới lien-he@tetprosoftware.com theo hướng dẫn ở mục Hỗ trợ.</p></details>
+</div>
+</section>
+
+<section id="support" class="alt">
+<div class="wrap two">
+<div>
+<h2>Hỗ trợ</h2>
+<p class="lead">Email: <a href="mailto:lien-he@tetprosoftware.com">lien-he@tetprosoftware.com</a><br>GitHub: <a href="https://github.com/tetprosoftware" rel="noopener" target="_blank">github.com/tetprosoftware</a> (khi có kho mã/vấn đề công khai phù hợp).</p>
+</div>
+<div class="card"><h3>Khi báo lỗi, hãy gửi</h3>
+<ul><li>Tên ứng dụng, phiên bản, nền tảng và phiên bản hệ điều hành.</li><li>Các bước tái hiện lỗi và thông báo lỗi.</li><li>Ảnh chụp màn hình đã che thông tin cá nhân.</li></ul>
+<p><strong>Không gửi</strong> mật khẩu, mã OTP, khóa riêng, số thẻ hay dữ liệu nhạy cảm.</p></div>
+</div>
+</section>
+
+<section id="eco">
+<div class="wrap">
+<h2>Hệ sinh thái Tết Pro Software</h2>
+<div class="grid eco" id="ecoGrid"></div>
+<h3 style="margin-top:40px">Mạng xã hội</h3>
+<div class="soc" id="soc"></div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Tết Pro Software — Giải pháp chuyển đổi số toàn diện. Cổng này không tuyên bố ứng dụng nào đã được cửa hàng phê duyệt khi chưa có liên kết chính thức.</div></footer>
+
+<script>
+/* ===== DỮ LIỆU: chỉ thêm ứng dụng thật khi đã xác nhận. =====
+ downloadLinks: {googlePlay, appStore, microsoftStore, apk:{url,sha256}, exe:{url,publisher,signature}, web}
+ Chỉ URL https hợp lệ mới tạo nút tải. releaseStatus: "released" | "in-development" */
+const APPS = [
+  {name:"Định hướng: Công cụ năng suất",summary:"Hướng phát triển ứng dụng hỗ trợ quản lý công việc và dữ liệu hằng ngày. Chưa phải sản phẩm đã phát hành.",platforms:["Android","iOS","Windows","Web"],releaseStatus:"in-development",version:null,releaseDate:null,downloadLinks:{},supportUrl:"mailto:lien-he@tetprosoftware.com",icon:"M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h9"},
+  {name:"Định hướng: Ứng dụng di động",summary:"Hướng phát triển ứng dụng trên điện thoại cho doanh nghiệp nhỏ. Nội dung và tính năng sẽ công bố khi được xác nhận.",platforms:["Android","iOS"],releaseStatus:"in-development",version:null,releaseDate:null,downloadLinks:{},supportUrl:"mailto:lien-he@tetprosoftware.com",icon:"M7 2h10a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zM11 18h2"},
+  {name:"Định hướng: Ứng dụng máy tính",summary:"Hướng phát triển phần mềm máy tính cho Windows, phân phối qua Microsoft Store hoặc tệp có chữ ký số khi đủ điều kiện.",platforms:["Windows"],releaseStatus:"in-development",version:null,releaseDate:null,downloadLinks:{},supportUrl:"mailto:lien-he@tetprosoftware.com",icon:"M3 4h18v12H3zM8 20h8M12 16v4"}
+];
+const PLATFORMS = [
+  {n:"Android",t:["Tải từ Google Play khi có liên kết chính thức.","APK trực tiếp: kiểm tra nguồn, phiên bản và SHA-256.","Không cài APK từ nguồn không rõ."]},
+  {n:"iOS",t:["Cài từ Apple App Store khi có liên kết thực.","Cần Apple ID và phiên bản iOS phù hợp (sẽ công bố theo ứng dụng).","Không cài hồ sơ cấu hình không rõ nguồn."]},
+  {n:"Windows",t:["Cài từ Microsoft Store khi có liên kết thực.","EXE trực tiếp: kiểm tra nhà phát hành và chữ ký số.","Chú ý cảnh báo SmartScreen; không bỏ qua khi chưa xác minh."]},
+  {n:"Web",t:["Dùng trực tiếp trên trình duyệt hiện đại, không cần cài đặt.","Chỉ truy cập qua địa chỉ HTTPS chính thức của Tết Pro Software.","Không nhập mật khẩu trên trang có tên miền lạ."]}
+];
+/* Chỉ điền khi có bản phát hành thật: {version,date,notes:[...]} */
+const RELEASES = [];
+const DEMO_RELEASES = [
+  {version:"x.y.z",date:"Ngày phát hành",notes:["Tính năng mới (ví dụ minh họa)","Cải thiện hiệu năng (ví dụ minh họa)","Sửa lỗi (ví dụ minh họa)"]},
+  {version:"x.y.(z-1)",date:"Ngày phát hành",notes:["Mục ghi chú mẫu để minh họa bố cục"]}
+];
+const ECO = [
+  ["https://www.tetprosoftware.com/","Website công ty","Trang chính thức giới thiệu Tết Pro Software."],
+  ["https://www.tetprosoftware.net/","Website quốc tế","Phiên bản dành cho khách hàng và đối tác quốc tế."],
+  ["https://www.tetprosoftware.org/","Tổ chức","Thông tin về tổ chức và hoạt động cộng đồng."],
+  ["https://www.tetprosoftware.online/","Trạng thái","Theo dõi trạng thái dịch vụ."],
+  ["https://www.tetprosoftware.me/","Danh bạ","Danh bạ và thông tin liên hệ."],
+  ["https://www.tetprosoftware.store/","Cửa hàng","Cửa hàng sản phẩm và dịch vụ."],
+  ["https://www.tetprosoftware.tech/","Công nghệ","Nội dung công nghệ và kỹ thuật."],
+  ["https://www.tetprosoftware.app/","Ứng dụng","Cổng ứng dụng hiện tại (trang này)."],
+  ["https://www.tetprosoftware.xyz/","Câu chuyện","Câu chuyện và hành trình thương hiệu."],
+  ["https://www.tetprosoftware.site/","Sản phẩm","Giới thiệu các sản phẩm."]
+];
+const SOCIAL = [
+  ["Facebook","https://www.facebook.com/tetprosoftware"],["Instagram","https://www.instagram.com/tetprosoftware"],
+  ["Threads","https://www.threads.com/@tetprosoftware"],["TikTok","https://www.tiktok.com/@tetprosoftware"],
+  ["YouTube","https://www.youtube.com/@tetprosoftware"],["GitHub","https://github.com/tetprosoftware"],
+  ["Pinterest","https://www.pinterest.com/tetprosoftware"],["LinkedIn","https://www.linkedin.com/company/tetprosoftware"]
+];
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isUrl = u => { try { return new URL(u).protocol === "https:"; } catch (e) { return false; } };
+
+function buttons(d, supportUrl) {
+  const out = [];
+  const add = (label, url) => { if (isUrl(url)) out.push(`<a class="btn p" href="${esc(url)}" rel="noopener" target="_blank">${esc(label)}</a>`); };
+  add("Google Play", d.googlePlay); add("App Store", d.appStore); add("Microsoft Store", d.microsoftStore); add("Mở bản web", d.web);
+  let extra = "";
+  if (d.apk && isUrl(d.apk.url)) {
+    add("Tải APK", d.apk.url);
+    extra += `<p class="note">APK: phiên bản ${esc(d.apk.version || "chưa công bố")}. SHA-256: ${d.apk.sha256 ? "<code>" + esc(d.apk.sha256) + "</code>" : "chưa công bố"}. Hãy so khớp trước khi cài.</p>`;
+  }
+  if (d.exe && isUrl(d.exe.url)) {
+    add("Tải EXE", d.exe.url);
+    extra += `<p class="note">EXE: nhà phát hành ${esc(d.exe.publisher || "chưa công bố")}. Chữ ký số: ${esc(d.exe.signature || "chưa công bố")}. Kiểm tra trước khi chạy.</p>`;
+  }
+  if (!out.length) out.push(`<p class="note">Chưa phát hành — đăng ký nhận thông tin qua email: <a href="mailto:lien-he@tetprosoftware.com?subject=${encodeURIComponent("Đăng ký nhận thông tin: " + "ứng dụng")}">lien-he@tetprosoftware.com</a>. Trang này không lưu đăng ký.</p>`);
+  const sup = supportUrl ? `<a class="btn s" href="${esc(supportUrl)}">Hỗ trợ</a>` : "";
+  return `<div class="dl">${out.join("")}${extra}${sup}</div>`;
+}
+function appCard(a) {
+  const done = a.releaseStatus === "released";
+  return `<article class="card app"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${esc(a.icon || "M12 3l9 5v8l-9 5-9-5V8z")}"/></svg></div>
+  <span class="st ${done ? "ok" : ""}">${done ? "Đã phát hành" : "Đang phát triển"}</span>
+  <h3>${esc(a.name)}</h3><p>${esc(a.summary)}</p>
+  <div class="chips">${(a.platforms || []).map(p => `<span class="chip">${esc(p)}</span>`).join("")}</div>
+  <dl class="meta"><dt>Phiên bản</dt><dd>${esc(a.version || "Chưa công bố")}</dd><dt>Ngày phát hành</dt><dd>${esc(a.releaseDate || "Chưa công bố")}</dd></dl>
+  ${buttons(a.downloadLinks || {}, a.supportUrl)}</article>`;
+}
+$("appGrid").innerHTML = APPS.map(appCard).join("");
+$("platGrid").innerHTML = PLATFORMS.map(p => `<article class="card pf"><h3>${esc(p.n)}</h3><ul>${p.t.map(x => `<li>${esc(x)}</li>`).join("")}</ul></article>`).join("");
+
+const real = RELEASES.length > 0, list = real ? RELEASES : DEMO_RELEASES;
+$("relList").innerHTML = (real ? "" : `<p class="note">Chưa có phiên bản thật được công bố. Danh sách dưới đây chỉ là <span class="demo">MINH HỌA</span> bố cục.</p>`) +
+  list.map(r => `<article class="card"><div><strong>${esc(r.version)}</strong><br><small>${esc(r.date)}</small>${real ? "" : '<br><span class="demo">Minh họa</span>'}</div><ul>${r.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></article>`).join("");
+
+$("ecoGrid").innerHTML = ECO.map(e => `<a class="card" href="${e[0]}" rel="noopener" target="_blank"><h3>${esc(e[1])}</h3><p>${esc(e[2])}</p><small>${esc(e[0].replace("https://", ""))}</small></a>`).join("");
+$("soc").innerHTML = SOCIAL.map(s => `<a href="${s[1]}" rel="noopener me" target="_blank">${esc(s[0])}</a>`).join("");
+$("yr").textContent = new Date().getFullYear();
+
+/* theme */
+const root = document.documentElement, tb = $("theme");
+function setTheme(t) { root.dataset.theme = t; tb.setAttribute("aria-pressed", t === "dark"); }
+let saved = null; try { saved = localStorage.getItem("tps-theme"); } catch (e) {}
+setTheme(saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+tb.onclick = () => { const t = root.dataset.theme === "dark" ? "light" : "dark"; setTheme(t); try { localStorage.setItem("tps-theme", t); } catch (e) {} };
+/* menu */
+const mb = $("menu"), nav = $("nav");
+mb.onclick = () => { const o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded", o); };
+nav.querySelectorAll("a").forEach(a => a.onclick = () => { nav.classList.remove("open"); mb.setAttribute("aria-expanded", "false"); });
+</script>
+</body>
+</html>
